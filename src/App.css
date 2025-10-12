@@ -105,7 +105,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-/* Nome principal */
 .hero-title {
     font-size: 3.5rem;
     margin: 10px 0;
@@ -120,7 +119,6 @@ h1, h2, h3 {
     margin-top: 5px;
 }
 
-/* FOTO — maior, central e com brilho */
 .profile-img-wrapper {
     width: 230px;
     height: 230px;
@@ -247,76 +245,112 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-/* ==================================== */
-/* 7️⃣ STACK */
-/* ==================================== */
-.stack-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
+/* === STACK PRINCIPAL — BLOCO SEPARADO POR CATEGORIA === */
+.stack-container {
+  background-color: #0B0C10;
+  padding: 60px 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 80px auto;
 }
 
-.stack-category {
-    margin-bottom: 60px;
+.stack-title {
+  color: #E0E0E0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: inline-block;
+  border-bottom: 3px solid #5E8BFF;
+  padding-bottom: 8px;
 }
 
-.stack-category h3 {
-    font-size: 1.6em;
-    margin-bottom: 25px;
-    color: #5E8BFF;
+/* Wrapper que segura todos os blocos (Front, Back, Ferramentas) */
+.stack-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
+/* Cada categoria (Front-End, Back-End, Ferramentas) */
+.stack-box {
+  background: linear-gradient(180deg, #141A25 0%, #0E1117 100%);
+  border-radius: 16px;
+  padding: 35px 25px;
+  width: 340px;
+  box-shadow: 0 0 25px rgba(94, 139, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stack-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(94, 139, 255, 0.3);
+}
+
+/* Título de cada bloco */
+.stack-box h3 {
+  color: #5E8BFF;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #5E8BFF;
+  padding-bottom: 8px;
+}
+
+/* Grade de tecnologias dentro de cada bloco */
 .stack-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 25px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .stack-card {
-    background: #1A202C;
-    border-radius: 12px;
-    padding: 20px 10px;
-    width: 130px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: #1A202C;
+  border-radius: 10px;
+  padding: 15px;
+  width: 90px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .stack-card:hover {
-    transform: translateY(-6px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(94, 139, 255, 0.3);
-}
-
-.icon-wrapper {
-    background: linear-gradient(135deg, #2A3345, #354157);
-    padding: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s;
-}
-
-.stack-card:hover .icon-wrapper {
-    background: linear-gradient(135deg, #5E8BFF, #395E9A);
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(94, 139, 255, 0.5);
 }
 
 .stack-icon {
-    width: 48px;
-    height: 48px;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 8px;
 }
 
-.stack-card span {
-    margin-top: 10px;
-    font-size: 1em;
-    font-weight: 600;
-    color: #E0E0E0;
+.stack-card p {
+  color: #E0E0E0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
 }
+
+/* Responsividade */
+@media (max-width: 1000px) {
+  .stack-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stack-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stack-box {
+    width: 90%;
+  }
+}
+
 
 /* ==================================== */
 /* 8️⃣ CONTATO */
@@ -368,8 +402,13 @@ h1, h2, h3 {
         height: 180px;
     }
 
-    .stack-section {
-        padding: 40px 15px;
+    .stack-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stack-box {
+        width: 90%;
     }
 
     .stack-card {
@@ -409,4 +448,110 @@ h1, h2, h3 {
         width: 38px;
         height: 38px;
     }
+}
+
+/* === STACK PRINCIPAL — BLOCO SEPARADO POR CATEGORIA === */
+.stack-container {
+  background-color: #0B0C10;
+  padding: 60px 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 80px auto;
+}
+
+.stack-title {
+  color: #E0E0E0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: inline-block;
+  border-bottom: 3px solid #5E8BFF;
+  padding-bottom: 8px;
+}
+
+/* Wrapper que segura todos os blocos (Front, Back, Ferramentas) */
+.stack-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Cada categoria (Front-End, Back-End, Ferramentas) */
+.stack-box {
+  background: linear-gradient(180deg, #141A25 0%, #0E1117 100%);
+  border-radius: 16px;
+  padding: 35px 25px;
+  width: 340px;
+  box-shadow: 0 0 25px rgba(94, 139, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stack-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(94, 139, 255, 0.3);
+}
+
+/* Título de cada bloco */
+.stack-box h3 {
+  color: #5E8BFF;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #5E8BFF;
+  padding-bottom: 8px;
+}
+
+/* Grade de tecnologias dentro de cada bloco */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.stack-card {
+  background: #1A202C;
+  border-radius: 10px;
+  padding: 15px;
+  width: 90px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(94, 139, 255, 0.5);
+}
+
+.stack-icon {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 8px;
+}
+
+.stack-card p {
+  color: #E0E0E0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+  .stack-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stack-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stack-box {
+    width: 90%;
+  }
 }
