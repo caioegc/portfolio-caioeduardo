@@ -25,7 +25,7 @@ const stack = {
 function Stack() {
   return (
     <section className="section-content stack-section">
-      <h2>🧠 Stack Principal</h2>
+      <h2>Stack Principal</h2>
       <div className="section-divider"></div>
 
       {Object.entries(stack).map(([categoria, tecnologias]) => (
