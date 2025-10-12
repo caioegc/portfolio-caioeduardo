@@ -40,7 +40,7 @@ function Contact() {
         </a>
 
         {/* Email */}
-        <a href="mailto:caioegc@gmail.com" title="E-mail">
+        <a href="mailto:dudueocara77@gmail.com" title="E-mail">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="white"

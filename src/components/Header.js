@@ -26,7 +26,9 @@ function Header() {
           />
         </div>
         <h1 className="hero-title">Caio Eduardo</h1>
-        <p className="hero-subtitle">Desenvolvedor Full Stack 💻</p>
+        <p className="hero-subtitle">
+          <strong>Desenvolvedor Full Stack </strong>
+        </p>
       </div>
     </header>
   );
