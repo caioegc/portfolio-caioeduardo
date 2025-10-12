@@ -1,38 +1,374 @@
-.App {
+/* ==================================== */
+/* 🌐 APP.CSS — LIMPO, OTIMIZADO E COMENTADO */
+/* ==================================== */
+
+/* 1️⃣ RESET E BOX MODEL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2️⃣ BASE DA PÁGINA — DEGRADÊ SUAVE */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to bottom, #e8e8e8 0%, #ffffff 50%, #ffffff 100%);
+  background-attachment: fixed;
+}
+
+/* 3️⃣ TÍTULOS */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #093A3E;
+}
+
+/* ==================================== */
+/* 4️⃣ CABEÇALHO (HEADER) */
+/* ==================================== */
+
+.header-container {
+  background: #093A3E;
+  color: white;
+  padding: 30px 20px 20px;
+  margin-bottom: 40px;
+}
+
+.header-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.header-title h1 {
+  font-size: 2.5em;
+}
+
+.header-title {
+  color: white;
+  text-decoration: none;
+}
+
+.header-subtitle {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* NAVBAR */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid white;
+}
+
+/* ==================================== */
+/* 5️⃣ SEÇÕES GERAIS (ABOUT, ETC) */
+/* ==================================== */
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  padding: 40px 30px;
+  text-align: left;
+}
+
+.section-content h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.section-divider {
+  width: 150px;
+  height: 3px;
+  background-color: #093A3E;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.section-content p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* ==================================== */
+/* 6️⃣ PROJETOS (PROJECTS) */
+/* ==================================== */
+
+.section-content:nth-child(3) {
+  max-width: 1100px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* LINKS DOS PROJETOS */
+.project-links {
+  margin-bottom: 15px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 15px 20px 0 0;
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: #054f9b;
+  text-decoration: underline;
+}
+
+/* TECNOLOGIAS (BADGES) */
+.project-techs {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badge {
+  background: #e6e6fa;
+  color: #4b0082;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/* ==================================== */
+/* 7️⃣ CONTATO */
+/* ==================================== */
+
+.contact-text {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0 50px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: #093A3E;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-links a:hover {
+  background: #1a5b60;
+  transform: translateY(-2px);
+}
+
+.contact-links a i {
+  font-size: 1.5em;
+}
+
+/* ==================================== */
+/* ⚙️ RESET E ESTILOS BÁSICOS */
+/* ==================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2d2d2d;
+  background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  color: #0b3b59;
+  font-weight: 700;
+}
+
+/* ==================================== */
+/* 🧠 SEÇÃO STACK */
+/* ==================================== */
+.stack-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-divider {
+  width: 100px;
+  height: 4px;
+  background-color: #0b3b59;
+  margin: 10px auto 40px;
+  border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stack-category {
+  margin-bottom: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stack-category h3 {
+  font-size: 1.6em;
+  margin-bottom: 25px;
+  color: #133a5e;
+}
+
+/* ==================================== */
+/* 💎 GRID E CARDS */
+/* ==================================== */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.stack-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px 10px;
+  width: 130px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.stack-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(11, 59, 89, 0.15);
+}
+
+.icon-wrapper {
+  background: linear-gradient(135deg, #eaf3ff, #f6faff);
+  padding: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: background 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.stack-card:hover .icon-wrapper {
+  background: linear-gradient(135deg, #d0e7ff, #e8f3ff);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.stack-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.stack-card span {
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ==================================== */
+/* 📱 RESPONSIVIDADE */
+/* ==================================== */
+@media (max-width: 768px) {
+  .stack-section {
+    padding: 40px 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .stack-category h3 {
+    font-size: 1.4em;
+  }
+
+  .stack-card {
+    width: 110px;
+    padding: 15px;
+  }
+
+  .stack-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stack-card span {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stack-card {
+    width: 100px;
+  }
+
+  .stack-icon {
+    width: 38px;
+    height: 38px;
   }
 }
