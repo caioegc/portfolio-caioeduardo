@@ -1,28 +1,32 @@
 import React from "react";
+import profileImg from "../assets/perfil.png"; // caminho correto
 
 function Header() {
   return (
-    <header className="header-container">
-      {/* Container principal para alinhamento horizontal */}
-      <div className="header-content-wrapper">
-        
-        {/* Nome/Título (Link para o topo) */}
-        <a href="#topo" className="header-title">
-          <h1>Caio Eduardo</h1>
-        </a>
+    <header id="topo" className="hero-section">
+      {/* ===== NAVBAR ===== */}
+      <nav className="navbar">
+        <ul className="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#stack">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
 
-        {/* Barra de Navegação */}
-        <nav className="navbar">
-          <ul className="nav-list">
-            <li><a href="#sobre" className="nav-link">Sobre Mim</a></li>
-            <li><a href="#projetos" className="nav-link">Projetos</a></li>
-            <li><a href="#contato" className="nav-link">Contato</a></li>
-          </ul>
-        </nav>
+      {/* ===== CONTEÚDO PRINCIPAL ===== */}
+      <div className="hero-content">
+        <div className="profile-img-wrapper">
+          <img
+            src={profileImg}
+            alt="Foto de Caio Eduardo"
+            className="profile-img"
+          />
+        </div>
+        <h1 className="hero-title">Caio Eduardo</h1>
+        <p className="hero-subtitle">Desenvolvedor Full Stack 💻</p>
       </div>
-      
-      {/* Subtítulo: Fica abaixo da barra de navegação */}
-      <p className="header-subtitle">Desenvolvedor Full Stack 💻</p> 
     </header>
   );
 }
