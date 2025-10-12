@@ -1,13 +1,12 @@
 import React from "react";
 
-// Este componente vai receber os detalhes do projeto como 'props'
 function ProjectCard(props) {
   return (
-    <div className="project-card">
+    <div className="projeto-card">
       <h3>{props.title}</h3>
       <p>{props.description}</p>
-      <div className="project-links">
-        {/* Usamos links simples por enquanto */}
+
+      <div className="projeto-links">
         <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
@@ -15,10 +14,12 @@ function ProjectCard(props) {
           Live Demo
         </a>
       </div>
-      <div className="project-techs">
-        {/* Mapear as tecnologias como badges */}
+
+      <div className="projeto-divider"></div>
+
+      <div className="projeto-tags">
         {props.techs && props.techs.map((tech, index) => (
-          <span key={index} className="tech-badge">
+          <span key={index} className="projeto-tag">
             {tech}
           </span>
         ))}

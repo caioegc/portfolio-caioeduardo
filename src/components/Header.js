@@ -4,6 +4,7 @@ import profileImg from "../assets/perfil.png"; // caminho correto
 function Header() {
   return (
     <header id="topo" className="hero-section">
+
       {/* ===== NAVBAR ===== */}
       <nav className="navbar">
         <ul className="nav-links">

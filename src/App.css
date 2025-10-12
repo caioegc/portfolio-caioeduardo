@@ -182,68 +182,108 @@ h1, h2, h3 {
 }
 
 /* ==================================== */
-/* 6️⃣ PROJETOS */
+/* 💻 SEÇÃO PROJETOS — ESTILO UNIFICADO */
 /* ==================================== */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
+
+.projetos-container {
+  background-color: #0B0C10;
+  padding: 60px 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 80px auto;
 }
 
-.project-card {
-    background: #1A202C;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
+.projetos-title {
+  color: #E0E0E0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  display: inline-block;
+  border-bottom: 3px solid #5E8BFF; /* igual ao Stack e Sobre */
+  padding-bottom: 8px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(94, 139, 255, 0.3);
+/* Grade dos cards de projetos */
+.projetos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
-.project-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+/* Cada card de projeto */
+.projeto-card {
+  background: linear-gradient(180deg, #141A25 0%, #0E1117 100%);
+  border-radius: 16px;
+  padding: 35px 25px;
+  width: 420px;
+  box-shadow: 0 0 25px rgba(94, 139, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
-.project-links {
-    margin-bottom: 15px;
+.projeto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(94, 139, 255, 0.3);
 }
 
-.project-links a {
-    color: #5E8BFF;
-    display: inline-block;
-    margin: 15px 20px 0 0;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s;
+/* Título e descrição */
+.projeto-card h3 {
+  color: #E0E0E0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
-.project-links a:hover {
-    color: #2F4C7D;
-    text-decoration: underline;
+.projeto-card p {
+  color: #B0B0B0;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-.project-techs {
-    border-top: 1px solid #444;
-    padding-top: 15px;
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Links */
+.projeto-links a {
+  color: #5E8BFF;
+  font-weight: 600;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
-.tech-badge {
-    background: #333333;
-    color: #5E8BFF;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 0.85em;
-    font-weight: bold;
+.projeto-links a:hover {
+  text-decoration: underline;
 }
+
+/* Linha divisória */
+.projeto-divider {
+  border-top: 1px solid #2C2F36;
+  margin: 20px 0;
+}
+
+/* Tags */
+.projeto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projeto-tag {
+  background: #1A202C;
+  color: #E0E0E0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .projeto-card {
+    width: 90%;
+  }
+}
+
 
 /* === STACK PRINCIPAL — BLOCO SEPARADO POR CATEGORIA === */
 .stack-container {
@@ -355,39 +395,67 @@ h1, h2, h3 {
 /* ==================================== */
 /* 8️⃣ CONTATO */
 /* ==================================== */
+
+.contato-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contato-title {
+  font-size: 2.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #5E8BFF, #2F4C7D);
+  border-radius: 2px;
+  margin: 0 auto 40px;
+}
+
 .contact-text {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    font-size: 1.1em;
-    color: #B0B0B0;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1em;
+  color: #B0B0B0;
+  line-height: 1.6;
 }
 
 .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin: 30px 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0 50px;
 }
 
 .contact-links a {
-    background: #1A202C;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 12px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    transition: background-color 0.3s, transform 0.2s;
+  background: #1A202C;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .contact-links a:hover {
-    background: #5E8BFF;
-    color: #0D1117;
-    transform: translateY(-2px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(94, 139, 255, 0.3);
+  background: #2F4C7D;
 }
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.contact-links a:hover .contact-icon {
+  transform: scale(1.1);
+}
+
 
 /* ==================================== */
 /* 9️⃣ RESPONSIVIDADE */
