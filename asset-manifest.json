@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio-caioeduardo/static/css/main.027b472b.css",
+    "main.js": "/portfolio-caioeduardo/static/js/main.a99fe66a.js",
+    "static/js/453.6264690d.chunk.js": "/portfolio-caioeduardo/static/js/453.6264690d.chunk.js",
+    "static/media/perfil.png": "/portfolio-caioeduardo/static/media/perfil.40476692f807a1395ed3.png",
+    "index.html": "/portfolio-caioeduardo/index.html",
+    "main.027b472b.css.map": "/portfolio-caioeduardo/static/css/main.027b472b.css.map",
+    "main.a99fe66a.js.map": "/portfolio-caioeduardo/static/js/main.a99fe66a.js.map",
+    "453.6264690d.chunk.js.map": "/portfolio-caioeduardo/static/js/453.6264690d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.027b472b.css",
+    "static/js/main.a99fe66a.js"
+  ]
+}
