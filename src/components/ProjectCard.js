@@ -3,6 +3,9 @@ import React from "react";
 function ProjectCard(props) {
   return (
     <div className="projeto-card">
+      {/* ADICIONA ESTA LINHA DA IMAGEM */}
+      <img src={props.imageUrl} alt={props.title} className="projeto-image" />
+      
       <h3>{props.title}</h3>
       <p>{props.description}</p>
 

@@ -17,14 +17,14 @@ function Projects() {
           liveLink="LINK_DO_DEMO_1"
         />
         
-        {/* PROJETO 2: Blog com Next.js */}
+        {/* PROJETO 2: TO-DO LIST FULL STACK - SEU PROJETO REAL! */}
         <ProjectCard 
-          title="Blog com Next.js"
-          description="Blog estático e performático construído com Next.js e consumo de API externa. Foco em SEO e acessibilidade."
-          imageUrl="https://placehold.co/400x180/4b0082/ffffff?text=BLOG+NEXT"
-          techs={["Next.js", "CSS Modules", "API REST"]}
-          githubLink="LINK_DO_GITHUB_2"
-          liveLink="LINK_DO_DEMO_2"
+          title="To-Do List Full Stack"
+          description="Sistema completo de gerenciamento de tarefas com back-end em Java puro e front-end moderno com dark mode e drag & drop."
+          imageUrl={process.env.PUBLIC_URL + "/todo-screenshot.png"}
+          techs={["Java", "JavaScript", "HTML/CSS", "API REST"]}
+          githubLink="https://github.com/caioegc/todo-backend-front-java"
+          liveLink="#" // Coloque o link do deploy se tiver
         />
       </div>
     </section>

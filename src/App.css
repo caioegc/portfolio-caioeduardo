@@ -229,6 +229,15 @@ h1, h2, h3 {
   box-shadow: 0 0 35px rgba(94, 139, 255, 0.3);
 }
 
+/* IMAGEM DO PROJETO - NOVO ESTILO ADICIONADO */
+.projeto-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
 /* Título e descrição */
 .projeto-card h3 {
   color: #E0E0E0;
@@ -674,4 +683,3 @@ h1, h2, h3 {
 .sobre-box strong {
   color: #E0E0E0;
 }
-
