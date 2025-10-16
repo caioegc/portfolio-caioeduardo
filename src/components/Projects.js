@@ -7,14 +7,14 @@ function Projects() {
       <h2 className="projetos-title">Projetos</h2>
 
       <div className="projetos-grid">
-        {/* PROJETO 1: App Financeiro */}
+         {/* PROJETO 1: JOGO DA COBRINHA FULL STACK */}
         <ProjectCard 
-          title="App de Gerenciamento Financeiro"
-          description="Aplicação Full Stack para controle de despesas e receitas. Demonstra meu uso de hooks e autenticação com JWT."
-          imageUrl="https://placehold.co/400x180/093A3E/ffffff?text=FINANCEIRO"
-          techs={["React", "Node.js", "MongoDB", "Auth"]}
-          githubLink="LINK_DO_GITHUB_1"
-          liveLink="LINK_DO_DEMO_1"
+          title="Jogo da Cobrinha Full Stack"
+          description="Clássico Snake Game desenvolvido com arquitetura completa. Backend em Java Spring Boot com API REST e frontend em React com hooks."
+          imageUrl={process.env.PUBLIC_URL + "/snake-game-screenshot.png"}
+          techs={["Java", "Spring Boot", "React", "H2 Database", "API REST"]}
+          githubLink="https://github.com/caioegc/snake-game"
+          liveLink="#" 
         />
         
         {/* PROJETO 2: TO-DO LIST FULL STACK - SEU PROJETO REAL! */}
