@@ -17,14 +17,14 @@ function Projects() {
           liveLink="#" 
         />
         
-        {/* PROJETO 2: TO-DO LIST FULL STACK - SEU PROJETO REAL! */}
+        {/* PROJETO 2: TO-DO LIST FULL STACK */}
         <ProjectCard 
-          title="To-Do List Full Stack"
+          title="Tarefas Full Stack"
           description="Sistema completo de gerenciamento de tarefas com back-end em Java puro e front-end moderno com dark mode e drag & drop."
           imageUrl={process.env.PUBLIC_URL + "/todo-screenshot.png"}
           techs={["Java", "JavaScript", "HTML/CSS", "API REST"]}
           githubLink="https://github.com/caioegc/todo-backend-front-java"
-          liveLink="#" // Coloque o link do deploy se tiver
+          liveLink="#" 
         />
       </div>
     </section>
